@@ -41,6 +41,8 @@ members:  [
  }
 const jsonDAta = JSON.stringify(data);
 
+const url =  "https://<dc>.api.mailchimp.com/3.0/lists/69c14344df";
+
 https.request(url,  options, function (responce){
 
 
