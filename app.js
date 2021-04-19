@@ -17,6 +17,12 @@ app.get("/", function (req, res) {
 
 app.post ("/", function (req,res){
 
+    var firstName = req.body.fName;
+    var lastName = req.body.lName;
+    var email = req.body.email;
+
+    console.log(firstName, lastName, email);
+
 
 });
 
