@@ -1,8 +1,9 @@
 
 const express = require("express");
 const bodyParser = require ("body-parser");
-
 const request = require("request");
+
+const https= require ("https");
 
 const app = express();
 
@@ -17,11 +18,11 @@ app.get("/", function (req, res) {
 
 app.post ("/", function (req,res){
 
-    var firstName = req.body.fName;
-    var lastName = req.body.lName;
-    var email = req.body.email;
+    const firstName = req.body.fName;
+    const lastName = req.body.lName;
+    const email = req.body.email;
 
- var data=  {
+ const data=  {
 members:  [
 {
     email_address: email,
@@ -38,7 +39,12 @@ members:  [
 ]
 
  }
-var jsonDAta = JSON.stringify(data);
+const jsonDAta = JSON.stringify(data);
+
+https.request(url,  options, function (responce){
+
+
+})
 
 });
 
