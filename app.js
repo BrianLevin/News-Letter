@@ -39,9 +39,9 @@ members:  [
 ]
 
  }
-const jsonDAta = JSON.stringify(data);
+const jsonData = JSON.stringify(data);
 
-const url =  "https://<dc>.api.mailchimp.com/3.0/lists/69c14344df";
+const url =  "https://us1.api.mailchimp.com/3.0/lists/69c14344df";
 
 const options = {
 
@@ -50,11 +50,19 @@ auth:  "Brian:c92f3f4c13f9e37945b1d2112a4d6b15-us1"
 
 }
 
-https.request(url,  options, function (responce){
+ const request= https.request(url,  options, function (responce){
 
+
+responce.on("data", function(data){
+console.log(JSON.parse(data));
+
+
+});
 
 })
+request.write(jsonData);
 
+request.end();
 });
 
 
