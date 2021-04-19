@@ -38,7 +38,7 @@ members:  [
 ]
 
  }
-
+var jsonDAta = JSON.stringify(data);
 
 });
 
