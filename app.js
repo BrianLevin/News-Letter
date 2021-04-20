@@ -86,10 +86,10 @@ const request = https.request(url, options, function(response){
 
     if (response.statusCode === 200) {
 
-        res.send("Successfully subscribed!");
+        res.sendFile( __dirname + "/success.html");
 
     } else {
-res.send("There was an error with signing up, please try again!");
+res.sendFile( __dirname + "/failure.html");
 
     }
 
