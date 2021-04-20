@@ -84,7 +84,7 @@ auth: "Brian:2accfc82cdafa2bc780f2d928bbe8b97-us1"
 
 const request = https.request(url, options, function(response){
 
-    if(responce.statusCode = 200) {
+    if (response.statusCode === 200) {
 
         res.send("Successfully subscribed!");
 
