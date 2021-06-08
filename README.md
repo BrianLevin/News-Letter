@@ -37,7 +37,7 @@ A  email news letter application that allows the users to sign up for an emailin
 - Javascript
 - Node
 - Express
-- Mail Chimo API
+- Mail Chimp API
 
 
 ## Email:
