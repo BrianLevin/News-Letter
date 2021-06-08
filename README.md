@@ -8,22 +8,22 @@ A  email news letter application that allows the users to sign up for an emailin
  
  This is  the home page:
  
- ![Home Screenshot](images/home.png)
+ ![Home Screenshot](public/images/home.png)
  
  Enter your credentials:
  
-![Events Screenshot](images/rightemail.png)
+![Events Screenshot](public/images/rightemail.png)
   
  A sucess page is then displayed if everything goes through correctly:
  
-  ![Events Screenshot](images/success.png)
+  ![Events Screenshot](public/images/success.png)
   
-  Otherwise a  failre page will be displayed which will prompt the user to click the button to go back to the homepage:
-    ![Events Screenshot](images/fail.png)
+  Otherwise, a  failure page will be displayed which will prompt the user to click the button to go back to the homepage:
+    ![Events Screenshot](public/images/fail.png)
    
    
    Once Sucessful, The user  information will then be saved to the mail chimp database where the website owner can send them emails:
-      ![Events Screenshot](images/server.png)    
+      ![Events Screenshot](public/images/server.png)    
       
    Here is an demonstration of how the website works if the user is successful and if the user fails signing up:
    
