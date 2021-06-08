@@ -89,7 +89,7 @@ const request = https.request(url, options, function(response){
         res.sendFile( __dirname + "/success.html");
 
     } else {
-res.sendFile( __dirname + "/failure.html");
+res.redirect( "/failure");
 
     }
 
@@ -103,16 +103,17 @@ console.log(JSON.parse(data));
 
 
 
-request.write(jsonData);
+//request.write(jsonData);
 
 request.end();
 
 
 
 });
-
-app.post("/failure", function(req,res){
-    res.redirect("/");
+// route to the failure page  after failed sign in attempt
+app.get("/failure", function(req,res){
+// directed to the fail.html page
+    res.sendFile( __dirname + "/failure.html");
 });
 
 app.listen(process.env.PORT || 3000, function(){
